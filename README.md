@@ -11,21 +11,21 @@ A web page has been created for us. Our job is to build the server.
 
 ## Part 1 - Index.js
 
-* This is the starting point of the server, put all code here
+<!-- * This is the starting point of the server, put all code here -->
 
 ### Express.static
 
-* After "app" is defined, add the `express.static` middleware to express referencing the "public" folder
-* Navigate to http://localhost:4000 to see the web page
+<!-- * After "app" is defined, add the `express.static` middleware to express referencing the "public" folder
+* Navigate to http://localhost:4000 to see the web page -->
 
 ### Body-parser
 
-* After "express.static", add body parser middleware to express
-  * Remember: `bodyParser.json()`
+<!-- * After "express.static", add body parser middleware to express
+  * Remember: `bodyParser.json()` -->
 
 ### Create express routes to get all things
 
-* Between lines 2 and 3, require the data from the following .js files:
+<!-- * Between lines 2 and 3, require the data from the following .js files:
   * /data/contacts
   * /data/vehicles
   * /data/comments
@@ -35,7 +35,7 @@ A web page has been created for us. Our job is to build the server.
   * "/vehicles"
   * "/comments"
   * "/products"
-* `res.json()` the appropriate array from the "require" statements above
+* `res.json()` the appropriate array from the "require" statements above -->
 
 ### Create express routes to get one thing
 
@@ -68,15 +68,15 @@ Once completed, the web page should be able to list out the information, create 
 
 # Part 2 - Routes
 
-* Create a folder called "routes" on the top level (next to data)
+<!-- * Create a folder called "routes" on the top level (next to data)
 * Create the following route files under this folder:
   * contacts.js
   * vehicles.js
   * comments.js
-  * products.js
-* The first two lines of each file should consist of:
+  * products.js -->
+<!-- * The first two lines of each file should consist of:
   * `const express = require('express')`
-  * `const router = express.Router()`
+  * `const router = express.Router()` -->
 * Use the router to move the appropriate routes into the appropriate files
   * Ex. `app.get('/contacts')` in "index.js" becomes `router.get('/contacts')` in "routes/contacts.js"
   * Make sure you move the appropriate "data" from the index.js file into the new file
@@ -87,12 +87,12 @@ Once completed, the web page should be able to list out the information, create 
 
 # Part 3 - Controllers
 
-* Create a folder called "controllers" on the top level (next to data, routes)
+<!-- * Create a folder called "controllers" on the top level (next to data, routes)
 * Create the following controller files under this folder:
   * contacts.js
   * vehicles.js
   * comments.js
-  * products.js
+  * products.js -->
 * Move the appropriate "data" from the router files to the controller files
   * Ex. move `const comments = require("../data/comments")` into the controller file so it has access to the array
 * Take the code from each router file and move it into the corresponding controller file
